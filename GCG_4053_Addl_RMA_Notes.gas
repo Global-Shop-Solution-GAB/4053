@@ -1,0 +1,332 @@
+Program.Sub.ScreenSU.Start
+gui.Form1..create
+gui.Form1..caption("Additional Notes RMA Entry")
+gui.Form1..size(9570,8775)
+gui.Form1..minx(0)
+gui.Form1..miny(0)
+gui.Form1..position(0,0)
+gui.Form1..event(unload,Form1_Unload)
+gui.Form1..alwaysontop(False)
+gui.Form1..fontname("Arial")
+gui.Form1..fontsize(7)
+gui.Form1..forecolor(0)
+gui.Form1..fontstyle(,,,,)
+gui.Form1..BackColor(15790320)
+gui.Form1..controlbox(True)
+gui.Form1..maxbutton(True)
+gui.Form1..minbutton(True)
+gui.Form1..mousepointer(0)
+gui.Form1..moveable(True)
+gui.Form1..sizeable(False)
+gui.Form1..ShowInTaskBar(False)
+gui.Form1..titlebar(True)
+gui.Form1.mltxNonComfTxt.create(textboxr)
+gui.Form1.mltxNonComfTxt.text("")
+gui.Form1.mltxNonComfTxt.visible(True)
+gui.Form1.mltxNonComfTxt.size(9195,1440)
+gui.Form1.mltxNonComfTxt.zorder(0)
+gui.Form1.mltxNonComfTxt.position(45,300)
+gui.Form1.mltxNonComfTxt.enabled(True)
+gui.Form1.mltxNonComfTxt.borderstyle(1)
+gui.Form1.mltxNonComfTxt.fontname("Arial")
+gui.Form1.mltxNonComfTxt.fontsize(7)
+gui.Form1.mltxNonComfTxt.maxLength(500)
+gui.Form1.mltxNonComfTxt.BackColor(16777215)
+gui.Form1.mltxNonComfTxt.defaultvalue("")
+gui.Form1.mltxNonComfTxt.controlgroup(0)
+gui.Form1.lbl2.create(label,"Description of Nonconformity or Complaint",True,2850,210,1,75,98,True,0,Arial,7,15790320,0)
+gui.Form1.lbl2.defaultvalue("")
+gui.Form1.lbl2.controlgroup(0)
+gui.Form1.lbl7.create(label,"Resolution",True,1500,195,1,75,1935,True,0,Arial,7,15790320,0)
+gui.Form1.lbl7.defaultvalue("")
+gui.Form1.lbl7.controlgroup(0)
+gui.Form1.chkAPI.create(checkbox)
+gui.Form1.chkAPI.caption("API Monogrammed Part")
+gui.Form1.chkAPI.visible(True)
+gui.Form1.chkAPI.size(2205,300)
+gui.Form1.chkAPI.zorder(0)
+gui.Form1.chkAPI.position(100,3700)
+gui.Form1.chkAPI.enabled(True)
+gui.Form1.chkAPI.alignment(0)
+gui.Form1.chkAPI.fontname("Arial")
+gui.Form1.chkAPI.fontsize(7)
+gui.Form1.chkAPI.defaultvalue("")
+gui.Form1.chkAPI.controlgroup(0)
+gui.Form1.chkNCMR.create(checkbox)
+gui.Form1.chkNCMR.caption("NCMR Required")
+gui.Form1.chkNCMR.visible(True)
+gui.Form1.chkNCMR.size(2220,300)
+gui.Form1.chkNCMR.zorder(0)
+gui.Form1.chkNCMR.position(100,4075)
+gui.Form1.chkNCMR.enabled(True)
+gui.Form1.chkNCMR.alignment(0)
+gui.Form1.chkNCMR.fontname("Arial")
+gui.Form1.chkNCMR.fontsize(7)
+gui.Form1.chkNCMR.defaultvalue("")
+gui.Form1.chkNCMR.controlgroup(0)
+gui.Form1.chkCA.create(checkbox)
+gui.Form1.chkCA.caption("Corrective Action Required")
+gui.Form1.chkCA.visible(True)
+gui.Form1.chkCA.size(2205,360)
+gui.Form1.chkCA.zorder(0)
+gui.Form1.chkCA.position(90,5235)
+gui.Form1.chkCA.enabled(True)
+gui.Form1.chkCA.alignment(0)
+gui.Form1.chkCA.fontname("Arial")
+gui.Form1.chkCA.fontsize(7)
+gui.Form1.chkCA.defaultvalue("")
+gui.Form1.chkCA.controlgroup(0)
+gui.Form1.mltxtCarPar.create(textboxm)
+gui.Form1.mltxtCarPar.text("")
+gui.Form1.mltxtCarPar.visible(True)
+gui.Form1.mltxtCarPar.size(4830,675)
+gui.Form1.mltxtCarPar.zorder(0)
+gui.Form1.mltxtCarPar.position(2160,4860)
+gui.Form1.mltxtCarPar.enabled(True)
+gui.Form1.mltxtCarPar.borderstyle(1)
+gui.Form1.mltxtCarPar.alignment(0)
+gui.Form1.mltxtCarPar.fontname("Arial")
+gui.Form1.mltxtCarPar.fontsize(7)
+gui.Form1.mltxtCarPar.maxLength(20)
+gui.Form1.mltxtCarPar.BackColor(16777215)
+gui.Form1.mltxtCarPar.defaultvalue("")
+gui.Form1.mltxtCarPar.controlgroup(0)
+gui.Form1.lbl12.create(label,"CAR/PAR #",True,1395,300,1,2175,4665,True,0,Arial,7,15790320,0)
+gui.Form1.lbl12.defaultvalue("")
+gui.Form1.lbl12.controlgroup(0)
+gui.Form1.chkFRNCR.create(checkbox)
+gui.Form1.chkFRNCR.caption("FRNCR Validated")
+gui.Form1.chkFRNCR.visible(True)
+gui.Form1.chkFRNCR.size(1560,360)
+gui.Form1.chkFRNCR.zorder(0)
+gui.Form1.chkFRNCR.position(100,4890)
+gui.Form1.chkFRNCR.enabled(True)
+gui.Form1.chkFRNCR.alignment(0)
+gui.Form1.chkFRNCR.fontname("Arial")
+gui.Form1.chkFRNCR.fontsize(7)
+gui.Form1.chkFRNCR.defaultvalue("")
+gui.Form1.chkFRNCR.controlgroup(0)
+gui.Form1.chkQARev.create(checkbox)
+gui.Form1.chkQARev.caption("QA Review Completed")
+gui.Form1.chkQARev.visible(True)
+gui.Form1.chkQARev.size(1920,360)
+gui.Form1.chkQARev.zorder(0)
+gui.Form1.chkQARev.position(75,7260)
+gui.Form1.chkQARev.enabled(True)
+gui.Form1.chkQARev.alignment(0)
+gui.Form1.chkQARev.fontname("Arial")
+gui.Form1.chkQARev.fontsize(7)
+gui.Form1.chkQARev.defaultvalue("")
+gui.Form1.chkQARev.controlgroup(0)
+gui.Form1.lbl16.create(label,"QA Notes/Comments",True,1500,300,1,60,5670,True,0,Arial,7,15790320,0)
+gui.Form1.lbl16.defaultvalue("")
+gui.Form1.lbl16.controlgroup(0)
+gui.Form1.frame17.create(frame)
+gui.Form1.frame17.caption("")
+gui.Form1.frame17.visible(True)
+gui.Form1.frame17.size(9150,105)
+gui.Form1.frame17.zorder(0)
+gui.Form1.frame17.position(105,6615)
+gui.Form1.frame17.enabled(True)
+gui.Form1.frame17.borderstyle(0)
+gui.Form1.frame17.fontname("Arial")
+gui.Form1.frame17.fontsize(7)
+gui.Form1.cmdSave.create(button)
+gui.Form1.cmdSave.caption("Save")
+gui.Form1.cmdSave.visible(True)
+gui.Form1.cmdSave.size(1125,345)
+gui.Form1.cmdSave.zorder(0)
+gui.Form1.cmdSave.position(105,7725)
+gui.Form1.cmdSave.enabled(True)
+gui.Form1.cmdSave.fontname("Arial")
+gui.Form1.cmdSave.fontsize(7)
+gui.Form1.cmdSave.event(click,cmdSave_Click)
+gui.Form1.cmdSave.defaultvalue("")
+gui.Form1.cmdSave.controlgroup(0)
+gui.Form1.mltxtRes.create(textboxm)
+gui.Form1.mltxtRes.text("")
+gui.Form1.mltxtRes.visible(True)
+gui.Form1.mltxtRes.size(9150,1500)
+gui.Form1.mltxtRes.zorder(0)
+gui.Form1.mltxtRes.position(65,2120)
+gui.Form1.mltxtRes.enabled(True)
+gui.Form1.mltxtRes.alignment(0)
+gui.Form1.mltxtRes.fontname("Arial")
+gui.Form1.mltxtRes.fontsize(7)
+gui.Form1.mltxtRes.maxLength(500)
+gui.Form1.mltxtRes.BackColor(-2147483643)
+gui.Form1.mltxtRes.defaultvalue("")
+gui.Form1.mltxtRes.controlgroup(0)
+gui.Form1.mltxtQA.create(textboxm)
+gui.Form1.mltxtQA.text("")
+gui.Form1.mltxtQA.visible(True)
+gui.Form1.mltxtQA.size(9120,1335)
+gui.Form1.mltxtQA.zorder(0)
+gui.Form1.mltxtQA.position(90,5870)
+gui.Form1.mltxtQA.enabled(True)
+gui.Form1.mltxtQA.alignment(0)
+gui.Form1.mltxtQA.fontname("Arial")
+gui.Form1.mltxtQA.fontsize(7)
+gui.Form1.mltxtQA.maxLength(500)
+gui.Form1.mltxtQA.BackColor(-2147483643)
+gui.Form1.mltxtQA.defaultvalue("")
+gui.Form1.mltxtQA.controlgroup(0)
+gui.Form1.mltxtRes.tabstop(True)
+gui.Form1.mltxtRes.tabindex(1)
+gui.Form1.mltxtCarPar.tabstop(True)
+gui.Form1.mltxtCarPar.tabindex(2)
+gui.Form1.mltxtQA.tabstop(True)
+gui.Form1.mltxtQA.tabindex(3)
+gui.Form1.chkAPI.tabstop(True)
+gui.Form1.chkAPI.tabindex(4)
+gui.Form1.chkNCMR.tabstop(True)
+gui.Form1.chkNCMR.tabindex(5)
+gui.Form1.chkCA.tabstop(True)
+gui.Form1.chkCA.tabindex(6)
+gui.Form1.chkFRNCR.tabstop(True)
+gui.Form1.chkFRNCR.tabindex(7)
+gui.Form1.chkQARev.tabstop(True)
+gui.Form1.chkQARev.tabindex(8)
+gui.Form1.cmdSave.tabstop(True)
+gui.Form1.cmdSave.tabindex(9)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+'Coded for Quote 6283-0
+'By AGM 1/12/2015
+'Attached on Script 1 hook: 35611
+'Script 1 to be renamed to V.Passed.Set("Addl Notes")
+
+F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+	F.Intrinsic.Control.Case(35601)
+		'If populate hook, label script 1 button
+		V.Passed.000124.Set("Addl Notes")
+	
+	F.Intrinsic.Control.Case(35611)
+		'script 1 button fired
+		F.ODBC.Connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+		F.Intrinsic.Control.CallSub(Load_rst)
+		Gui.Form1..Show
+	
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4053_Addl_RMA_Notes.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.Form1_Unload.Start
+F.Intrinsic.Control.SetErrorHandler("Form1_Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.End
+F.ODBC.Connection!conx.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Form1_Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4053_Addl_RMA_Notes.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Form1_Unload.End
+
+Program.Sub.cmdSave_Click.Start
+V.Local.sSQL.Declare(String)
+V.Local.sSQL1.Declare(String)
+
+'Finds record within the custom table where RMA_ID is a match
+F.Intrinsic.String.Build("SELECT * FROM GCG_4053_NOTES WHERE RMA_ID = '{0}'",V.Passed.000001,V.Local.sSQL)
+F.ODBC.Connection!conx.OpenRecordsetRW("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,<>,True)
+	'If any records found, delete it so the new record can be written
+	F.Intrinsic.String.Build("DELETE FROM GCG_4053_NOTES WHERE RMA_ID = '{0}'",V.Passed.000001,V.Local.sSQL1)
+	F.ODBC.Connection!conx.Execute(V.Local.sSQL1)
+F.Intrinsic.Control.EndIf
+'Adding in new record to custom table
+F.ODBC.conx!rst.AddNew
+F.ODBC.conx!rst.Set!RMA_ID(V.Passed.000001)
+F.ODBC.conx!rst.Set!RES_TEXT(V.Screen.Form1!mltxtRes.Text)
+F.ODBC.conx!rst.Set!QA_NOTES(V.Screen.Form1!mltxtQA.Text)
+F.ODBC.conx!rst.Set!CAR_PART_NOTES(V.Screen.Form1!mltxtCarPar.Text)
+F.ODBC.conx!rst.Set!NON_COMF_TXT(V.Screen.Form1!mltxNonComfTxt.Text)
+F.ODBC.conx!rst.Set!API_PART_FLAG(V.Screen.Form1!chkAPI.Value)
+F.ODBC.conx!rst.Set!NCMR_FLAG(V.Screen.Form1!chkNCMR.Value)
+F.ODBC.conx!rst.Set!CAR_FLAG(V.Screen.Form1!chkCA.Value)
+F.ODBC.conx!rst.Set!FRNCR_FLAG(V.Screen.Form1!chkFRNCR.Value)
+F.ODBC.conx!rst.Set!QA_COMPLETE(V.Screen.Form1!chkQARev.Value)
+F.ODBC.conx!rst.Set!EMPL_LAST_CHANGE(V.Caller.User)
+F.ODBC.conx!rst.Set!DATE_LAST_CHANGE(V.Ambient.Date)
+F.ODBC.conx!rst.Update
+F.Intrinsic.UI.Msgbox("Information Saved","Saved")
+
+F.ODBC.conx!rst.Close
+
+
+
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.load_Rst.Start
+F.Intrinsic.Control.SetErrorHandler("load_Rst_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'Load Record set for RMA ID selected (if any records exist)
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.Control.If(V.Passed.000001,=,"")
+	F.Intrinsic.UI.Msgbox("Please select an RMA number","Unable to Open")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("SELECT * FROM GCG_4053_NOTES WHERE RMA_ID = '{0}'",V.Passed.000001,V.Local.sSQL)
+F.ODBC.Connection!conx.OpenRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,<>,True)
+	Gui.Form1.chkAPI.Value(V.ODBC.conx!rst.FieldValTrim!API_PART_FLAG)
+	Gui.Form1.chkNCMR.Value(V.ODBC.conx!rst.FieldValTrim!NCMR_FLAG)
+	Gui.Form1.chkCA.Value(V.ODBC.conx!rst.FieldValTrim!CAR_FLAG)
+	Gui.Form1.chkFRNCR.Value(V.ODBC.conx!rst.FieldValTrim!FRNCR_FLAG)
+	Gui.Form1.chkQARev.Value(V.ODBC.conx!rst.FieldValTrim!QA_COMPLETE)
+	Gui.Form1.mltxtRes.Text(V.ODBC.conx!rst.FieldValTrim!RES_TEXT)
+	Gui.Form1.mltxtQA.Text(V.ODBC.conx!rst.FieldValTrim!QA_NOTES)
+	Gui.Form1.mltxtCarPar.Text(V.ODBC.conx!rst.FieldValTrim!CAR_PART_NOTES)
+	Gui.Form1.mltxNonComfTxt.Text(V.ODBC.conx!rst.FieldValTrim!NON_COMF_TXT)
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rst.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("load_Rst_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4053_Addl_RMA_Notes.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.load_Rst.End
+
+Program.Sub.Comments.Start
+${$0$}$$}$AGM$}$1/12/2015 3:16:02 PM
+Program.Sub.Comments.End
+
